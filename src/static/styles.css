@@ -14,10 +14,11 @@
   font-size: 1.05em;
 }
 
+
 .participants-list {
-  list-style-type: disc;
-  margin: 0 0 0 1.5em;
-  padding: 0;
+  list-style: none;
+  margin: 0.5em 0 0 0;
+  padding-left: 0;
   color: #333;
   font-size: 0.98em;
 }
@@ -26,6 +27,21 @@
   margin-bottom: 0.2em;
   padding-left: 0.2em;
   word-break: break-all;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.delete-participant {
+  margin-left: 0.5em;
+  color: #c00;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+.delete-participant:hover {
+  color: #900;
 }
 
 .no-participants {
